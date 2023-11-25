@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Royal Apparel Fashion Collection</title>
+    <title>Contact Royal Apparel</title>
     <link rel="stylesheet" type="text/css" href="fashion_app.css">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <style></style>
@@ -21,15 +21,15 @@
         </div>
 
         <div class="other_header">
-            <button style="font-size: 15px; background-color: #000; border-radius: 5px; padding: 10px;"><a href="account.html" style="text-decoration: none; color: gold;">My Account 👤</a></button>
-        </div>                
-
-        <div class="other_header">
-            <button style="font-size: 15px; background-color: #000; border-radius: 5px; size: inherit;"><a href="cartelogue.html" style="color: gold; text-decoration: none;">Catalogue 💃</a></button>
+            <button style="font-size: 15px; background-color: #000; border-radius: 5px;"><a href="account.html" style="text-decoration: none; color: gold;">My Account 👤</a></button>
         </div>
 
         <div class="other_header">
-            <select class="currency_selector" name="currency" id="currency" style="font-size: 17px; background-color: #000; color: gold; border-radius: 5px; text-align: center; size: inherit;">
+            <button style="font-size: 15px; background-color: #000; color: gold; border-radius: 5px;"><a href="cartelogue.html" style="color: gold; text-decoration: none;">Catalogue 💃</a></button>
+        </div>
+
+        <div class="other_header">
+            <select class="currency_selector" name="currency" id="currency" style="font-size: 17px; background-color: #000; color: gold; border-radius: 5px; text-align: center;">
                 <option value="NGN">NGN 💰</option>
                 <option value="USD">USD 💰</option>
                 <option value="EUR">EUR 💰</option>
@@ -39,49 +39,50 @@
     </div>
 
     <div class="navbuttons">
-        <button class="btn" style="background-color: rgb(71, 69, 69);"><a class="active" href="fashion_app.html">HOME</a></button>
+        <button class="btn"><a class="action" href="fashion_app.html">HOME</a></button>
+        <button class="btn"><a class="action" href="menu.html">BOUTIQUE</a></button>
         <button class="btn"><a class="action" href="about.html">ABOUT</a></button>
-        <button class="btn"><a class="action" href="contact us.html">CONTACT US</a></button>
     </div>
 
-    <div style="background-image: url('images/background.jpg'); height: 550px; background-size: cover;" class="hero-image">
-        <div class="hero-text">
-            <h1>Royal Apparel</h1>
-            <h3>Fashion Collection</h3>
-
-            <div>
-                <button class="button"><b><a href="menu.html" style="text-decoration: none; color: gold;">BOUTIQUE</a></b></button>
-            </div>
-        </div>
+    <div class="container" >
+            <h1>Contact Us</h1>
+            <h3><b><i>Leave us a message here and we hope to reply you soon! 😤😤😤</i></b></h3>  
     </div>
 
-    <div class="perks">
-            <div>
-                <img src="Footer_image/coin_icon.jpg" alt="coin">
-                <h4>Great Prices</h4>
-                <p>Value for money</p>
-            </div>
+    <div class="column">
+        <form action="action_page.php">
+           <label for="fname" style="margin-right: 30px;">First Name</label>
+           <input class="placeholder" type="text" id="fname" name="First Name" placeholder="Your name" style="width: 300px; padding: 10px;"><br>
 
-            <div>
-                <img src="Footer_image/support_icon.jpg" alt="customer support">
-                <h4 style="margin-right: 2px;">Customer Support</h4>
-                <p style="margin-left: 7px;">Friendly & Courteous</p>
-            </div>
+           <label for="lname" style="margin-right: 32px;">Last Name</label>
+           <input class="placeholder" type="text" id="lname" name="Last name" placeholder="Your name" style="width: 300px; padding: 10px;"><br>
 
-            <div>
-                <img src="Footer_image/payment_icon.jpg" alt="card">
-                <h4>Online Payment</h4>
-                <p>100% Secure</p>
-            </div>
+           <label for="pnumber">Phone Number</label>
+           <input class="placeholder" type="number" id="pnumber" name="Phone number" placeholder="+234" style="width: 300px; padding: 10px;"><br>
 
-            <div>
-                <img src="Footer_image/shipping_icon.jpg" alt="bus">
-                <h4 style="margin-left: 10px;">Nationwide Shipping</h4>
-                <p>Fast & Reliable</p>
-            </div>
-        </div>
+           <label for="email"style="margin-right: 3px;" >Email Address</label>
+           <input class="placeholder" type="email" id="email" name="Email Address" placeholder="example@gmail.com" style="width: 300px; padding: 10px;"><br>
 
-    <div class="footer">
+           <label for="Country" style="margin-right: 55px;">Country</label>
+           <select class="placeholder" name="Country" id="country" style="width: 170px; padding: 10px; background-color: greenyellow;"><Country>
+             <option value="Nigeria" style="background-color: greenyellow;">Nigeria</option>
+             <option value="Ghana" style="background-color: greenyellow;">Ghana</option>
+             <option value="Togo" style="background-color: greenyellow;">Togo</option>
+             <option value="Niger" style="background-color: greenyellow;">Niger</option>
+             <option value="Kenya" style="background-color: greenyellow;">Kenya</option>
+             <option value="Mali" style="background-color: greenyellow;">Mali</option>
+             <option value="South Africa" style="background-color: greenyellow;">South Africa</option>
+             <option value="Uganda" style="background-color: greenyellow;">Uganda</option>
+             <option value="Benin Republic" style="background-color: greenyellow;">Benin Republic</option>
+           </select><br>
+
+           <label for="subject" style="position: absolute; padding-right: 50px;">Subject</label>
+           <textarea id="subject" name="subject" placeholder="📌 Write something..." style="height: 160px; width: 650px; margin-top: 25px; margin-left: 195px;"></textarea>
+           <input class="placeholder" type="submit" value="Submit" style="background-color: orange; border-radius: 5px; border: groove; border; margin-left: 800px;">
+        </form>
+    </div>
+
+    <div class="footer" style="border-top: groove; border-color: rgb(130, 129, 129); padding-bottom: 5px; margin-top: 5px;">
         <div>
             <h3 style="text-align: center;">About us</h3>
             <p style="margin-left: 5px;">Royal Apparel is an online retailer that provides one-stop shopping for women outfits. Established in 2023, we are the first and only niche store in Nigeria wholly targeted at providing an unmatched range of fashionable wears for women.</p>
@@ -127,10 +128,10 @@
 
         <div>
             <h3 style="text-align: center;">Useful links</h3>
-            <a href="account.html" style="margin-left: 5px;">Profile</a>
-            <a href="account.html" style="margin-left: 5px;">Register</a>
-            <a href="cartelogue.html" style="margin-left: 5px;">Catalogue</a>
-            <a href="menu.html" style="margin-left: 5px;">Cart</a>
+            <a href="#profile" style="margin-left: 5px;">Profile</a>
+            <a href="#register" style="margin-left: 5px;">Register</a>
+            <a href="#catelogue" style="margin-left: 5px;">Catelogue</a>
+            <a href="#cart" style="margin-left: 5px;">Cart</a>
         </div>
 
         <div>
@@ -141,9 +142,7 @@
     </div>
     
     <marquee class="copyright">Royal Apparel Fashion Collection. All rights reserved &copy; 2023</marquee>
-    
-    <script>window.alert("Promo!!! 😁😁😁 Buy 2 Leather Pant and Get 1 Palazo Free!!! 😁😁😁");</script>
-
     <script src="fashion_app.js"></script>
-</body>
-</html>
+</body>   
+</html>   
+        

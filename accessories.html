@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boutique Royal Apparel</title>
+</head>
+<body>
+    <link rel="stylesheet" type="text/css" href="fashion_app.css">
+    <link rel="stylesheet" type="text/css" href="menu.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+    <div class="header">
+        <div>
+            <img src="images/logo.png" alt="Royal Apparel" width="200px" height="180px" style="border-radius: 15px;">
+        </div>
+        <div class="search_container">
+            <form action="/action_page.php">
+                <input type="text" placeholder="Search for a style..."name="search" style="padding: 10px; border: groove; border-color: rgb(130, 129, 129);">
+                <button type="submit" style="border: groove; border-color: rgb(130, 129, 129);"><i class="fa fa-search"></i>
+                </button>
+            </form> 
+        </div>
+
+        <div class="other_header">
+            <button style="font-size: 15px; background-color: #000; border-radius: 5px;"><a href="account.html" style="text-decoration: none; color: gold;">My Account 👤</a></button>
+        </div>
+
+        <div class="other_header">
+            <button style="font-size: 15px; background-color: #000; color: gold; border-radius: 5px;"><a href="cartelogue.html" style="color: gold; text-decoration: none;">Catalogue 💃</a></button>
+        </div>
+
+        <div class="other_header">
+            <select class="currency_selector" name="currency" id="currency" style="font-size: 17px; background-color: #000; color: gold; border-radius: 5px; text-align: center;">
+                <option value="NGN">NGN 💰</option>
+                <option value="USD">USD 💰</option>
+                <option value="EUR">EUR 💰</option>
+                <option value="BITCOIN">BITCOIN 💰</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="navbuttons">
+        <button class="btn"><a class="action" href="fashion_app.html">HOME</a></button>
+        <button class="btn"><a class="action" href="menu.html">CLOTHINGS</a></button>
+        <button class="btn"><a class="action" href="footwear.html">FOOT WEARS</a></button>
+    </div>
+    
+    <div class="collections">
+        <div>
+            <img src="images/Bling Bow Hip Waist Skirt.jpg" alt="Waist Chain" height="350px" width="350px" style="border: groove;">
+            <h3 id="g">Bling Bow Waist Chain</h3>
+            <button class="button" onclick="gold()">View Price</button>
+
+            <img src="images/Silver Double Heart Ring.jpg" alt="Ring" height="350px" width="350px" style="border: groove;">
+            <h3 id="h">Silver Double Heart Ring</h3>
+            <button class="button" onclick="silver()">View Price</button>
+
+            <img src="images/Straw Bow Ribbon Hat.jpg" alt="Hat" height="350px" width="350px" style="border: groove;">
+            <h3 id="i">Straw Bow Ribbon Hat</h3>
+            <button class="button" onclick="hat()">View Price</button>
+        
+            <img src="images/BFF Wrist Watch.jpg" alt="Watch" height="350px" width="350px" style="border: groove;">
+            <h3 id="k">BFF Wrist Watch</h3>
+            <button class="button" onclick="watch()">View Price</button>
+
+            <img src="images/Metal Leaf Buckle Belt.jpg" alt="Belt" height="350px" width="350px" style="border: groove;">
+            <h3 id="j">Metal Leaf Buckle Belt</h3>
+            <button class="button" onclick="belt()">View Price</button>
+
+            <img src="images/Crystal Beaded Bracelet.jpg" alt="Bracelet" height="350px" width="350px" style="border: groove;">
+            <h3 id="l">Crystal Beaded Bracelet</h3>
+            <button class="button" onclick="bracelet()">View Price</button>
+       
+            <img src="images/Amethyst Black Gold Ring.jpg" alt="Ring" height="350px" width="350px" style="border: groove;">
+            <h3 id="m">Amethyst Black Gold Ring</h3>
+            <button class="button" onclick="ring()">View Price</button>
+
+            <img src="images/Quilted Drawstring Purse.jpg" alt="Purse" height="350px" width="350px" style="border: groove;">
+            <h3 id="n">Quilted Drawstring Purse</h3>
+            <button class="button" onclick="purse()">View Price</button>
+        </div><br>
+
+        <div>
+            <img src="images/Blushing Pink Bag.jpg" alt="Bag" height="350px" width="350px" style="border: groove;">
+            <h3 id="o">Blushing Pink Bag</h3>
+            <button class="button" onclick="bag()">View Price</button>
+        
+            <img src="images/Royal Facinator.jpg" alt="Fascinator" height="350px" width="350px" style="border: groove;">
+            <h3 id="p">Beaded Royal Fascinator</h3>
+            <button class="button" onclick="facet()">View Price</button>
+
+            <img src="images/Exclusive Bridal Bangles.jpg" alt="Bangle" height="350px" width="350px" style="border: groove;">
+            <h3 id="q">Exclusive Bridal Bangle</h3>
+            <button class="button" onclick="bangle()">View Price</button>
+
+            <img src="images/Fashion Tea Sunglasses.jpg" alt="Sunglasses" height="350px" width="350px" style="border: groove;">
+            <h3 id="r">Fashion Tea Sunglass</h3>
+            <button class="button" onclick="shade()">View Price</button>
+        
+            <img src="images/Crystal Stone Earrings.jpg" alt="Earrings" height="350px" width="350px" style="border: groove;">
+            <h3 id="s">Crystal Stone Earring</h3>
+            <button class="button" onclick="stone()">View Price</button>
+
+            <img src="images/Crystal Stone Jewelry.jpg" alt="Jewelry" height="350px" width="350px" style="border: groove;">
+            <h3 id="u">Crystal Stone Jewelry</h3>
+            <button class="button" onclick="crystal()">View Price</button>
+
+            <img src="images/Floral Pattern Scrunchie Scarf.jpg" alt="Scarf" height="350px" width="350px" style="border: groove;">
+            <h3 id="v">Floral Pattern Scarf</h3>
+            <button class="button" onclick="pattern()">View Price</button>
+        
+            <img src="images/Freshwater Pearl Bracelet.jpg" alt="Bracelet" height="350px" width="350px" style="border: groove;">
+            <h3 id="w">Fresh Water Pearl Bracelet</h3>
+            <button class="button" onclick="pearl()">View Price</button>  
+        </div><br>
+
+        <div>
+            <img src="images/Gold Cross Chain.jpg" alt="Chain" height="350px" width="350px" style="border: groove;">
+            <h3 id="x">Golden Cross Chain</h3>
+            <button class="button" onclick="cross()">View Price</button>
+
+            <img src="images/Lilac Purse.jpg" alt="Purse" height="350px" width="350px" style="border: groove;">
+            <h3 id="y">Lilac Purse</h3>
+            <button class="button" onclick="lilac()">View Price</button>
+        
+            <img src="images/Rose Gold Earrings.jpg" alt="Earrings" height="350px" width="350px" style="border: groove;">
+            <h3 id="z">Rose Gold Earring</h3>
+            <button class="button" onclick="rose()">View Price</button>
+
+            <img src="images/Silver Leaf Charm Bracelet.jpg" alt="Bracelet" height="350px" width="350px" style="border: groove;">
+            <h3 id="aa">Silver Leaf Charm Bracelet</h3>
+            <button class="button" onclick="charm()">View Price</button>
+
+            <img src="images/Silver Rhinestone Waist Belt.jpg" alt="Belt" height="350px" width="350px" style="border: groove;">
+            <h3 id="ab">Silver Rhinestone Waist Belt</h3>
+            <button class="button" onclick="waist()">View Price</button>
+        
+            <img src="images/Vintage Rhinestone Sunglasses.jpg" alt="Sunglasses" height="350px" width="350px" style="border: groove;">
+            <h3 id="ae">Vintage Rhinestone Sunglass</h3>
+            <button class="button" onclick="glass()">View Price</button>
+
+            <img src="images/Bride Hat.jpg" alt="Hat" height="350px" width="350px" style="border: groove;">
+            <h3 id="af">Bridal Hat</h3>
+            <button class="button" onclick="bride()">View Price</button>
+
+            <img src="images/Black Silk Facinator.jpg" alt="Fascinator" height="350px" width="350px" style="border: groove;">
+            <h3 id="ag">Black Silk Fascinator</h3>
+            <button class="button" onclick="silk()">View Price</button>
+        </div><br>
+        
+        <div>
+            
+        </div>
+    </div>
+
+    <div class="footer" style="border-top: groove; border-color: rgb(130, 129, 129);">
+        <div>
+            <h3 style="text-align: center;">About us</h3>
+            <p style="margin-left: 5px;">Royal Apparel is an online retailer that provides one-stop shopping for women outfits. Established in 2023, we are the first and only niche store in Nigeria wholly targeted at providing an unmatched range of fashionable wears for women.</p>
+        </div>
+
+        <div>
+            <h3 style="text-align: center;">Method of Payment</h3>
+            <img src="Footer_image/mastercard_logo.jpg.png" alt="master_card" height="40px" style="margin-left: 50px;">
+            <img src="Footer_image/visa_card.jpg.png" alt="verve_card" height="40px">
+            <img src="Footer_image/verve_card.jpg.png" alt="verve_card" height="40px">
+            <img src="Footer_image/paystack.jpg" alt="paystack" height="40px" style="margin-right: 22px;">
+        </div>
+
+        <div>
+            <h3 style="margin-left: 40px;">Join Our Newsletter!</h3>
+            <form action="">
+                <label for="email"></label>
+                <input type="text" id="email" name="email" value="Your email address" style="padding: 10px; margin-right: 10px; border: groove; border-color: rgb(130, 129, 129);"><button style="padding: 7px; margin-right: 10px; font-size: 12px;">SIGN UP</button>
+            </form>
+        </div>
+    </div>    
+
+    <div class="footer" style="border-bottom: groove; border-color: rgb(130, 129, 129);">
+        <div style="display: grid; grid-template-columns: auto auto auto auto auto auto;">
+            <img src="Footer_image/facebook_logo.png" alt="facebook_logo" style="width: 50px; height: 50px; margin-left: 5px;">
+            <a href="#" style="display: inline-block; margin-right: 50px; margin-bottom: 50px; text-decoration: none;">Royal Apparel</a>
+
+            <img src="Footer_image/twitter_logo.png" alt="twitter_logo" style="width: 50px; height: 50px;">
+            <a href="#" style="display: inline-block; margin-right: 50px; text-decoration: none; text-decoration: none;">@Royal Apparel</a>
+
+            <img src="Footer_image/instagram_logo.png" alt="instagram_logo" style="width: 50px; height: 50px">
+            <a href="#" style="display: inline-block; margin-right: 50px; text-decoration: none;">Royal_Apparel</a>
+
+            <img src="Footer_image/google_maps_logo.png" alt="google_maps_logo" style="width: 50px; height: 50px;">
+            <a href="#" style="display: inline-block; margin-right: 50px; text-decoration: none;">Lagos, Nigeria</a>
+
+            <img src="Footer_image/gmail_logo.png" alt="gmail_logo" style="width: 50px; height: 50px;">
+            <a href="#" style="display: inline-block; margin-right: 50px; text-decoration: none;">royalapparel@gmail.com</a>
+
+            <img src="Footer_image/phone_icon.jpg" alt="phone_icon_logo" style="width: 50px; height: 50px;">
+            <a href="#" style="display: inline-block; margin-right: 50px; text-decoration: none;">+234 9068406872</a>
+        </div>
+
+        <div>
+            <h3 style="text-align: center;">Useful links</h3>
+            <a href="#profile" style="margin-left: 5px;">Profile</a>
+            <a href="#register" style="margin-left: 5px;">Register</a>
+            <a href="#catelogue" style="margin-left: 5px;">Catelogue</a>
+            <a href="#cart" style="margin-left: 5px;">Cart</a>
+        </div>
+
+        <div>
+            <a class="active" href="fashion_app.html" style="margin-left: 20px; color: #00f;">HOME</a> <br>
+            <a class="action" href="about.html" style="margin-left: 20px; color: #00f;">ABOUT</a> <br>
+            <a class="action" href="contact us.html" style="margin-left: 20px; color: #00f;">CONTACT</a>
+        </div>
+    </div>
+     
+    <marquee class="copyright">Royal Apparel Fashion Collection. All rights reserved &copy; 2023</marquee>
+
+    <script>window.alert("Instruction: Please Click The Button Below The Item To View The Price! 😉😃");</script>
+    
+    <script src="fashion_app.js"></script>
+</body>
+</html>

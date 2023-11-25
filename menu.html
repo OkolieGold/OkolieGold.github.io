@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boutique Royal Apparel</title>
+    <link rel="stylesheet" type="text/css" href="fashion_app.css">
+    <link rel="stylesheet" type="text/css" href="menu.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+    <div class="header">
+        <div>
+            <img src="images/logo.png" alt="Royal Apparel" width="200px" height="180px" style="border-radius: 15px;">
+        </div>
+
+        <div class="search_container">
+            <form action="/action_page.php">
+                <input type="text" placeholder="Search for a style..."name="search" style="padding: 10px; border: groove; border-color: rgb(130, 129, 129);">
+                <button type="submit" style="border: groove; border-color: rgb(130, 129, 129);"><i class="fa fa-search"></i>
+                </button>
+            </form> 
+        </div>
+
+        <div class="other_header">
+            <button style="font-size: 15px; background-color: #000; border-radius: 5px;"><a href="account.html" style="text-decoration: none; color: gold;">My Account 👤</a></button>
+        </div>
+
+        <div class="other_header">
+            <button style="font-size: 15px; background-color: #000; color: gold; border-radius: 5px;"><a href="cartelogue.html" style="color: gold; text-decoration: none;">Catalogue 💃</a></button>
+        </div>
+
+        <div class="other_header">
+            <select class="currency_selector" name="currency" id="currency" style="font-size: 17px; background-color: #000; color: gold; border-radius: 5px; text-align: center;">
+                <option value="NGN">NGN 💰</option>
+                <option value="USD">USD 💰</option>
+                <option value="EUR">EUR 💰</option>
+                <option value="BITCOIN">BITCOIN 💰</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="navbuttons">
+        <button class="btn"><a class="action" href="fashion_app.html">HOME</a></button>
+        <button class="btn"><a class="action" href="accessories.html">ACCESSORIES</a></button>
+        <button class="btn"><a class="action" href="footwear.html">FOOT WEARS</a></button>
+    </div>
+    
+    <div class="collections">
+        <div>
+            <img src="images/palazo.jpg" alt="Palazo" height="350px" width="350px" style="border: groove;">
+            <h3 id="a">Palazo</h3>
+            <button class="button" onclick="palazo()">View Price</button>
+
+            <img src="images/jump suit.jpg" alt="JumpSuit" height="350px" width="350px" style="border: groove;">
+            <h3 id="b">Jump Suit</h3>
+            <button class="button" onclick="jumpsuit()">View Price</button>
+        
+            <img src="images/Ripped Casual Jeans.jpg" alt="Jean" height="350px" width="350px" style="border: groove;">
+            <h3 id="aj">Ripped Casual Jean</h3>
+            <button class="button" onclick="rip()">View Price</button>
+        
+            <img src="images/kimono jacket.jpg" alt="Kimono" height="350px" width="350px" style="border: groove;">
+            <h3 id="c">Kimono Jacket</h3>
+            <button class="button" onclick="kimono()">View Price</button>
+        </div>
+            
+        <div>
+            <img src="images/power suit.jpg" alt="PowerSuit" height="350px" width="350px" style="border: groove;">
+            <h3 id="d">Power Suit</h3>
+            <button class="button" onclick="power()">View Price</button>
+
+            <img src="images/Skinny Waist Jeans.jpg" alt="Jean" height="350px" width="350px" style="border: groove;">
+            <h3 id="ai">Skinny Waist Jean</h3>
+            <button class="button" onclick="skinny()">View Price</button>
+        
+            <img src="images/top.jpg" alt="Top" height="350px" width="350px" style="border: groove;">
+            <h3 id="e">Top</h3>
+            <button class="button" onclick="blouse()">View Price</button>
+            <br>
+
+            <img src="images/leather pant.jpg" alt="Leatherpant" height="350px" width="350px" style="border: groove;">
+            <h3 id="f">Leather Pant</h3>
+            <button class="button" onclick="leatherpant()">View Price</button>
+        </div>
+        
+        <div>
+            <img src="images/Casual Jean Jacket.png" alt="Jacket" height="350px" width="350px" style="border: groove;">
+            <h3 id="ah">Casual Jean Jacket</h3>
+            <button class="button" onclick="jacket()">View Price</button>
+        
+            <img src="images/V neck Short Gown.jpg" alt="Gown" height="350px" width="350px" style="border: groove;">
+            <h3 id="ak">V Neck Short Gown</h3>
+            <button class="button" onclick="short()">View Price</button>
+        
+            <img src="images/Summer Button Wrap Skirt.jpg" alt="Skirt" height="350px" width="350px" style="border: groove;">
+            <h3 id="al">Summer Button Wrap Skirt</h3>
+            <button class="button" onclick="button()">View Price</button>
+
+            <img src="images/Ruched Ruffle Slit Skirt.jpg" alt="Skirt" height="350px" width="350px" style="border: groove;">
+            <h3 id="am">Ruched Ruffle Slit Skirt</h3>
+            <button class="button" onclick="slit()">View Price</button>
+        </div>
+    </div>
+
+    <div class="footer" style="border-top: groove; border-color: rgb(130, 129, 129);">
+        <div>
+            <h3 style="text-align: center;">About us</h3>
+            <p style="margin-left: 5px;">Royal Apparel is an online retailer that provides one-stop shopping for women outfits. Established in 2023, we are the first and only niche store in Nigeria wholly targeted at providing an unmatched range of fashionable wears for women.</p>
+        </div>
+
+        <div>
+            <h3 style="text-align: center;">Method of Payment</h3>
+            <img src="Footer_image/mastercard_logo.jpg.png" alt="master_card" height="40px" style="margin-left: 50px;">
+            <img src="Footer_image/visa_card.jpg.png" alt="verve_card" height="40px">
+            <img src="Footer_image/verve_card.jpg.png" alt="verve_card" height="40px">
+            <img src="Footer_image/paystack.jpg" alt="paystack" height="40px" style="margin-right: 22px;">
+        </div>
+
+        <div>
+            <h3 style="margin-left: 40px;">Join Our Newsletter!</h3>
+            <form action="">
+                <label for="email"></label>
+                <input type="text" id="email" name="email" value="Your email address" style="padding: 10px; margin-right: 10px; border: groove; border-color: rgb(130, 129, 129);"><button style="padding: 7px; margin-right: 10px; font-size: 12px;">SIGN UP</button>
+            </form>
+        </div>
+    </div>    
+
+    <div class="footer" style="border-bottom: groove; border-color: rgb(130, 129, 129); padding-bottom: 5px;">
+        <div style="display: grid; grid-template-columns: auto auto auto auto auto auto;">
+            <img src="Footer_image/facebook_logo.png" alt="facebook_logo" style="width: 50px; height: 50px; margin-left: 5px;">
+            <a href="#" style="display: inline-block; margin-right: 50px; margin-bottom: 50px; text-decoration: none;">Royal Apparel</a>
+
+            <img src="Footer_image/twitter_logo.png" alt="twitter_logo" style="width: 50px; height: 50px;">
+            <a href="#" style="display: inline-block; margin-right: 50px; text-decoration: none; text-decoration: none;">@Royal Apparel</a>
+
+            <img src="Footer_image/instagram_logo.png" alt="instagram_logo" style="width: 50px; height: 50px">
+            <a href="#" style="display: inline-block; margin-right: 50px; text-decoration: none;">Royal_Apparel</a>
+
+            <img src="Footer_image/google_maps_logo.png" alt="google_maps_logo" style="width: 50px; height: 50px;">
+            <a href="#" style="display: inline-block; margin-right: 50px; text-decoration: none;">Lagos, Nigeria</a>
+
+            <img src="Footer_image/gmail_logo.png" alt="gmail_logo" style="width: 50px; height: 50px;">
+            <a href="#" style="display: inline-block; margin-right: 50px; text-decoration: none;">royalapparel@gmail.com</a>
+
+            <img src="Footer_image/phone_icon.jpg" alt="phone_icon_logo" style="width: 50px; height: 50px;">
+            <a href="#" style="display: inline-block; margin-right: 50px; text-decoration: none;">+234 9068406872</a>
+        </div>
+
+        <div>
+            <h3 style="text-align: center;">Useful links</h3>
+            <a href="#profile" style="margin-left: 5px;">Profile</a>
+            <a href="#register" style="margin-left: 5px;">Register</a>
+            <a href="#catelogue" style="margin-left: 5px;">Catelogue</a>
+            <a href="#cart" style="margin-left: 5px;">Cart</a>
+        </div>
+
+        <div>
+            <a class="active" href="fashion_app.html" style="margin-left: 20px; color: #00f;">HOME</a> <br>
+            <a class="action" href="about.html" style="margin-left: 20px; color: #00f;">ABOUT</a> <br>
+            <a class="action" href="contact us.html" style="margin-left: 20px; color: #00f;">CONTACT</a>
+        </div>
+    </div>
+    
+    <marquee class="copyright">Royal Apparel Fashion Collection. All rights reserved &copy; 2023</marquee>
+
+    <script>window.alert("Instruction: Please Click The Button Below The Item To View The Price! 😉😃");</script>
+    
+    <script src="fashion_app.js"></script>
+</body>
+</html>
