@@ -6,30 +6,32 @@
     <title>Royal Apparel Fashion Collection</title>
     <link rel="stylesheet" type="text/css" href="fashion_app.css">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style></style>
 </head>
 <body>
     <div class="header">
         <div>
-            <img src="images/logo.png" alt="Royal Apparel" width="200px" height="180px" style="border-radius: 15px;">
+            <img src="logo.png" alt="Royal Apparel" width="110px" height="80px" style="border-radius: 15px; margin-top: 5px; margin-left: 5px;">
         </div>
-        <div class="search_container">
+
+        <div class="other_header">
             <form action="/action_page.php">
-                <input class="srch" type="text" name="search" placeholder="Search for a style..." style="padding: 10px; border: groove; border-color: rgb(130, 129, 129);">
-                <a href="menu.html"><button type="submit" style="border: groove; border-color: rgb(130, 129, 129);"><i class="fa fa-search"></i></a>
+                <input class="srch" type="text" name="search" placeholder="Search for a style..." style="padding: 8px; padding-left: 35px; border-radius: 20px; border: none;">
+                <button type="submit" style="border: none; padding: 8px;"><a href="menu.html"><i class="fa fa-search"></i></a></button>
             </form> 
         </div>
 
         <div class="other_header">
-            <button style="font-size: 15px; background-color: #000; border-radius: 5px; padding: 10px;"><a href="account.html" style="text-decoration: none; color: gold;">My Account 👤</a></button>
+            <a href="account.html" class="topnav">My Account 👤</a>
         </div>                
 
         <div class="other_header">
-            <button style="font-size: 15px; background-color: #000; border-radius: 5px; size: inherit;"><a href="cartelogue.html" style="color: gold; text-decoration: none;">Catalogue 💃</a></button>
+            <a href="cartelogue.html" class="topnav">Catalogue 💃</a>
         </div>
 
         <div class="other_header">
-            <select class="currency_selector" name="currency" id="currency" style="font-size: 17px; background-color: #000; color: gold; border-radius: 5px; text-align: center; size: inherit;">
+            <select class="currency_selector" name="currency" id="currency" style="color: #000; background-color: orange; text-align: center; font-size: 15px; border: none;">
                 <option value="NGN">NGN 💰</option>
                 <option value="USD">USD 💰</option>
                 <option value="EUR">EUR 💰</option>
@@ -39,15 +41,15 @@
     </div>
 
     <div class="navbuttons">
-        <button class="btn" style="background-color: rgb(71, 69, 69);"><a class="active" href="fashion_app.html">HOME</a></button>
-        <button class="btn"><a class="action" href="about.html">ABOUT</a></button>
-        <button class="btn"><a class="action" href="contact us.html">CONTACT US</a></button>
+        <a class="active" href="fashion_app.html">HOME</a>
+        <a class="action" href="about.html">ABOUT</a>
+        <a class="action" href="contact us.html">CONTACT US</a>
     </div>
 
-    <div style="background-image: url('images/background.jpg'); height: 550px; background-size: cover;" class="hero-image">
+    <div style="background-image: url('background.jpg'); height: 550px; background-size: cover;" class="hero-image">
         <div class="hero-text">
-            <h1>Royal Apparel</h1>
-            <h3>Fashion Collection</h3>
+            <h1 style="margin-bottom: 20px; margin-top: 30px;">Royal Apparel</h1>
+            <h3 style="margin-bottom: 120px;">Fashion Collection</h3>
 
             <div>
                 <button class="button"><b><a href="menu.html" style="text-decoration: none; color: gold;">BOUTIQUE</a></b></button>
@@ -57,86 +59,86 @@
 
     <div class="perks">
             <div>
-                <img src="Footer_image/coin_icon.jpg" alt="coin">
-                <h4>Great Prices</h4>
-                <p>Value for money</p>
+                <img src="coin.png" alt="coin">
+                <h4 style="color: orange;">Great Prices</h4>
+                <p style="color: orange;">Value for money</p>
             </div>
 
             <div>
-                <img src="Footer_image/support_icon.jpg" alt="customer support">
-                <h4 style="margin-right: 2px;">Customer Support</h4>
-                <p style="margin-left: 7px;">Friendly & Courteous</p>
+                <img src="support.png" alt="customer support">
+                <h4 style="margin-right: 2px; color: orange;">Customer Support</h4>
+                <p style="margin-left: 7px; color: orange;">Friendly & Courteous</p>
             </div>
 
             <div>
-                <img src="Footer_image/payment_icon.jpg" alt="card">
-                <h4>Online Payment</h4>
-                <p>100% Secure</p>
+                <img src="payment.png" alt="card">
+                <h4 style="color: orange;">Online Payment</h4>
+                <p style="color: orange;">100% Secure</p>
             </div>
 
             <div>
-                <img src="Footer_image/shipping_icon.jpg" alt="bus">
-                <h4 style="margin-left: 10px;">Nationwide Shipping</h4>
-                <p>Fast & Reliable</p>
+                <img src="shipping.png" alt="bus">
+                <h4 style="margin-left: 10px; color: orange;">Nationwide Shipping</h4>
+                <p style="color: orange;">Fast & Reliable</p>
             </div>
         </div>
 
     <div class="footer">
         <div>
-            <h3 style="text-align: center;">About us</h3>
+            <h3 style="text-align: center; color: orange;">About us</h3>
             <p style="margin-left: 5px;">Royal Apparel is an online retailer that provides one-stop shopping for women outfits. Established in 2023, we are the first and only niche store in Nigeria wholly targeted at providing an unmatched range of fashionable wears for women.</p>
         </div>
 
         <div>
-            <h3 style="text-align: center;">Method of Payment</h3>
-            <img src="Footer_image/mastercard_logo.jpg.png" alt="master_card" height="40px" style="margin-left: 50px;">
-            <img src="Footer_image/visa_card.jpg.png" alt="verve_card" height="40px">
-            <img src="Footer_image/verve_card.jpg.png" alt="verve_card" height="40px">
-            <img src="Footer_image/paystack.jpg" alt="paystack" height="40px" style="margin-right: 22px;">
+            <h3 style="text-align: center; color: orange;">Method of Payment</h3>
+            <img src="mastercard_logo.jpg.png" alt="master_card" height="40px" style="margin-left: 50px; border-radius: 5px;">
+            <img src="visa_card.jpg.png" alt="visa_card" height="40px" style="border-radius: 5px;">
+            <img src="verve_card.jpg.png" alt="verve_card" height="40px" style="border-radius: 5px;">
+            <img src="paystack.jpg" alt="paystack" height="40px" style="margin-right: 22px; border-radius: 5px;">
         </div>
 
         <div>
-            <h3 style="margin-left: 40px;">Join Our Newsletter!</h3>
+            <h3 style="margin-left: 40px; color: orange;">Join Our Newsletter!</h3>
             <form action="">
                 <label for="email"></label>
-                <input type="text" id="email" name="email" value="Your email address" style="padding: 10px; margin-right: 10px; border: groove; border-color: rgb(130, 129, 129);"><button style="padding: 7px; margin-right: 10px; font-size: 12px;">SIGN UP</button>
+                <input type="text" id="email" name="email" value="Your email address" style="padding: 10px; margin-right: 10px; border: none; border-radius: 20px"><button style="padding: 10px; margin-right: 10px; font-size: 10px; border-radius: 50px; color: orange;">SIGN UP</button>
             </form>
         </div>
     </div>    
 
-    <div class="footer" style="border-bottom: groove; border-color: rgb(130, 129, 129);">
+    <div class="footer" style="border-bottom: groove;">
         <div style="display: grid; grid-template-columns: auto auto auto auto auto auto;">
-            <img src="Footer_image/facebook_logo.png" alt="facebook_logo" style="width: 50px; height: 50px; margin-left: 5px;">
-            <a href="#" style="display: inline-block; margin-right: 50px; margin-bottom: 50px; text-decoration: none;">Royal Apparel</a>
+            <img src="facebook_logo.png" alt="facebook_logo" style="width: 50px; height: 50px; margin-left: 5px;">
+            <a href="#" style="display: inline-block; margin-right: 50px; margin-bottom: 50px; text-decoration: none; color: orange;">Royal Apparel</a>
 
-            <img src="Footer_image/twitter_logo.png" alt="twitter_logo" style="width: 50px; height: 50px;">
-            <a href="#" style="display: inline-block; margin-right: 50px; text-decoration: none; text-decoration: none;">@Royal Apparel</a>
+            <img src="twitter_logo.png" alt="twitter_logo" style="width: 50px; height: 50px;">
+            <a href="#" style="display: inline-block; margin-right: 50px; text-decoration: none; text-decoration: none; color: orange;">@Royal Apparel</a>
 
-            <img src="Footer_image/instagram_logo.png" alt="instagram_logo" style="width: 50px; height: 50px">
-            <a href="#" style="display: inline-block; margin-right: 50px; text-decoration: none;">Royal_Apparel</a>
+            <img src="instagram_logo.png" alt="instagram_logo" style="width: 50px; height: 50px">
+            <a href="#" style="display: inline-block; margin-right: 50px; text-decoration: none; color: orange;">Royal_Apparel</a>
 
-            <img src="Footer_image/google_maps_logo.png" alt="google_maps_logo" style="width: 50px; height: 50px;">
-            <a href="#" style="display: inline-block; margin-right: 50px; text-decoration: none;">Lagos, Nigeria</a>
+            <img src="google_maps_logo.png" alt="google_maps_logo" style="width: 50px; height: 50px;">
+            <a href="#" style="display: inline-block; margin-right: 50px; text-decoration: none; color: orange;">Lagos, Nigeria</a>
 
-            <img src="Footer_image/gmail_logo.png" alt="gmail_logo" style="width: 50px; height: 50px;">
-            <a href="#" style="display: inline-block; margin-right: 50px; text-decoration: none;">royalapparel@gmail.com</a>
+            <img src="gmail_logo.png" alt="gmail_logo" style="width: 50px; height: 50px;">
+            <a href="#" style="display: inline-block; margin-right: 50px; text-decoration: none; color: orange;">royalapparel@gmail.com</a>
 
-            <img src="Footer_image/phone_icon.jpg" alt="phone_icon_logo" style="width: 50px; height: 50px;">
-            <a href="#" style="display: inline-block; margin-right: 50px; text-decoration: none;">+234 9068406872</a>
+            <img src="phone.png" alt="phone_icon_logo" style="width: 50px; height: 50px;">
+            <a href="#" style="display: inline-block; margin-right: 50px; text-decoration: none; color: orange;">+234 9068406872</a>
         </div>
 
         <div>
-            <h3 style="text-align: center;">Useful links</h3>
-            <a href="account.html" style="margin-left: 5px;">Profile</a>
-            <a href="account.html" style="margin-left: 5px;">Register</a>
-            <a href="cartelogue.html" style="margin-left: 5px;">Catalogue</a>
-            <a href="menu.html" style="margin-left: 5px;">Cart</a>
+            <h3 style="text-align: center; color: orange;">Useful links</h3>
+            <a href="account.html" style="margin-left: 5px;  color: orange;">Profile</a>
+            <a href="account.html" style="margin-left: 5px;  color: orange;">Register</a>
+            <a href="cartelogue.html" style="margin-left: 5px;  color: orange;">Catalogue</a>
+            <a href="menu.html" style="margin-left: 5px;  color: orange;">Cart</a>
         </div>
 
         <div>
-            <a class="active" href="fashion_app.html" style="margin-left: 20px; color: #00f;">HOME</a> <br>
-            <a class="action" href="about.html" style="margin-left: 20px; color: #00f;">ABOUT</a> <br>
-            <a class="action" href="contact us.html" style="margin-left: 20px; color: #00f;">CONTACT US</a>
+            <a class="active" href="fashion_app.html" style="margin-left: 20px;  color: orange;">HOME</a> <br>
+            <a class="action" href="about.html" style="margin-left: 20px;  color: orange;">ABOUT</a> <br>
+            <a class="action" href="contact us.html" style="margin-left: 20px; color: orange;">CONTACT US</a>
         </div>
     </div>
     
