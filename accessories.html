@@ -13,26 +13,26 @@
 <body>
     <div class="header">
         <div>
-            <img src="images/logo.png" alt="Royal Apparel" width="200px" height="180px" style="border-radius: 15px;">
+            <img src="logo.png" alt="Royal Apparel" width="110px" height="80px" style="border-radius: 15px; margin-top: 5px; margin-left: 5px;">
         </div>
-        <div class="search_container">
+
+        <div class="other_header">
             <form action="/action_page.php">
-                <input type="text" placeholder="Search for a style..."name="search" style="padding: 10px; border: groove; border-color: rgb(130, 129, 129);">
-                <button type="submit" style="border: groove; border-color: rgb(130, 129, 129);"><i class="fa fa-search"></i>
-                </button>
+                <input class="srch" type="text" name="search" placeholder="Search for a style..." style="padding: 8px; padding-left: 35px; border-radius: 20px; border: none;">
+                <button type="submit" style="border: none; padding: 8px;"><a href="menu.html"><i class="fa fa-search"></i></a></button>
             </form> 
         </div>
 
         <div class="other_header">
-            <button style="font-size: 15px; background-color: #000; border-radius: 5px;"><a href="account.html" style="text-decoration: none; color: gold;">My Account 👤</a></button>
+            <a href="account.html" class="topnav">My Account 👤</a>
+        </div>                
+
+        <div class="other_header">
+            <a href="cartelogue.html" class="topnav">Catalogue 💃</a>
         </div>
 
         <div class="other_header">
-            <button style="font-size: 15px; background-color: #000; color: gold; border-radius: 5px;"><a href="cartelogue.html" style="color: gold; text-decoration: none;">Catalogue 💃</a></button>
-        </div>
-
-        <div class="other_header">
-            <select class="currency_selector" name="currency" id="currency" style="font-size: 17px; background-color: #000; color: gold; border-radius: 5px; text-align: center;">
+            <select class="currency_selector" name="currency" id="currency" style="color: #000; background-color: orange; text-align: center; font-size: 15px; border: none;">
                 <option value="NGN">NGN 💰</option>
                 <option value="USD">USD 💰</option>
                 <option value="EUR">EUR 💰</option>
@@ -42,111 +42,113 @@
     </div>
 
     <div class="navbuttons">
-        <button class="btn"><a class="action" href="fashion_app.html">HOME</a></button>
-        <button class="btn"><a class="action" href="menu.html">CLOTHINGS</a></button>
-        <button class="btn"><a class="action" href="footwear.html">FOOT WEARS</a></button>
+        <a class="action" href="fashion_app.html">HOME</a>
+        <a class="action" href="menu.html">CLOTHINGS</a>
+        <a class="action" href="footwear.html">FOOT WEARS</a>
+        <a class="action" href="about.html">ABOUT</a>
+        <a class="action" href="contact us.html">CONTACT US</a>
     </div>
     
     <div class="collections">
         <div>
-            <img src="images/Bling Bow Hip Waist Skirt.jpg" alt="Waist Chain" height="350px" width="350px" style="border: groove;">
-            <h3 id="g">Bling Bow Waist Chain</h3>
+            <img src="Bling Bow Hip Waist Skirt.jpg" alt="Waist Chain" class="clt">
+            <h3 id="g" class="text">Bling Bow Waist Chain</h3>
             <button class="button" onclick="gold()">View Price</button>
 
-            <img src="images/Silver Double Heart Ring.jpg" alt="Ring" height="350px" width="350px" style="border: groove;">
-            <h3 id="h">Silver Double Heart Ring</h3>
+            <img src="Silver Double Heart Ring.jpg" alt="Ring" class="clt">
+            <h3 id="h" class="text">Silver Double Heart Ring</h3>
             <button class="button" onclick="silver()">View Price</button>
 
-            <img src="images/Straw Bow Ribbon Hat.jpg" alt="Hat" height="350px" width="350px" style="border: groove;">
-            <h3 id="i">Straw Bow Ribbon Hat</h3>
+            <img src="Straw Bow Ribbon Hat.jpg" alt="Hat" class="clt">
+            <h3 id="i" class="text">Straw Bow Ribbon Hat</h3>
             <button class="button" onclick="hat()">View Price</button>
         
-            <img src="images/BFF Wrist Watch.jpg" alt="Watch" height="350px" width="350px" style="border: groove;">
-            <h3 id="k">BFF Wrist Watch</h3>
+            <img src="BFF Wrist Watch.jpg" alt="Watch" class="clt">
+            <h3 id="k" class="text">BFF Wrist Watch</h3>
             <button class="button" onclick="watch()">View Price</button>
 
-            <img src="images/Metal Leaf Buckle Belt.jpg" alt="Belt" height="350px" width="350px" style="border: groove;">
-            <h3 id="j">Metal Leaf Buckle Belt</h3>
+            <img src="Metal Leaf Buckle Belt.jpg" alt="Belt" class="clt">
+            <h3 id="j" class="text">Metal Leaf Buckle Belt</h3>
             <button class="button" onclick="belt()">View Price</button>
 
-            <img src="images/Crystal Beaded Bracelet.jpg" alt="Bracelet" height="350px" width="350px" style="border: groove;">
-            <h3 id="l">Crystal Beaded Bracelet</h3>
+            <img src="Crystal Beaded Bracelet.jpg" alt="Bracelet" class="clt">
+            <h3 id="l" class="text">Crystal Beaded Bracelet</h3>
             <button class="button" onclick="bracelet()">View Price</button>
        
-            <img src="images/Amethyst Black Gold Ring.jpg" alt="Ring" height="350px" width="350px" style="border: groove;">
-            <h3 id="m">Amethyst Black Gold Ring</h3>
+            <img src="Amethyst Black Gold Ring.jpg" alt="Ring" class="clt">
+            <h3 id="m" class="text">Amethyst Black Gold Ring</h3>
             <button class="button" onclick="ring()">View Price</button>
 
-            <img src="images/Quilted Drawstring Purse.jpg" alt="Purse" height="350px" width="350px" style="border: groove;">
-            <h3 id="n">Quilted Drawstring Purse</h3>
+            <img src="Quilted Drawstring Purse.jpg" alt="Purse" class="clt">
+            <h3 id="n" class="text">Quilted Drawstring Purse</h3>
             <button class="button" onclick="purse()">View Price</button>
         </div><br>
 
         <div>
-            <img src="images/Blushing Pink Bag.jpg" alt="Bag" height="350px" width="350px" style="border: groove;">
-            <h3 id="o">Blushing Pink Bag</h3>
+            <img src="Blushing Pink Bag.jpg" alt="Bag" class="clt">
+            <h3 id="o" class="text">Blushing Pink Bag</h3>
             <button class="button" onclick="bag()">View Price</button>
         
-            <img src="images/Royal Facinator.jpg" alt="Fascinator" height="350px" width="350px" style="border: groove;">
-            <h3 id="p">Beaded Royal Fascinator</h3>
+            <img src="Royal Facinator.jpg" alt="Fascinator" class="clt">
+            <h3 id="p" class="text">Beaded Royal Fascinator</h3>
             <button class="button" onclick="facet()">View Price</button>
 
-            <img src="images/Exclusive Bridal Bangles.jpg" alt="Bangle" height="350px" width="350px" style="border: groove;">
-            <h3 id="q">Exclusive Bridal Bangle</h3>
+            <img src="Exclusive Bridal Bangles.jpg" alt="Bangle" class="clt">
+            <h3 id="q" class="text">Exclusive Bridal Bangle</h3>
             <button class="button" onclick="bangle()">View Price</button>
 
-            <img src="images/Fashion Tea Sunglasses.jpg" alt="Sunglasses" height="350px" width="350px" style="border: groove;">
-            <h3 id="r">Fashion Tea Sunglass</h3>
+            <img src="Fashion Tea Sunglasses.jpg" alt="Sunglasses" class="clt">
+            <h3 id="r" class="text">Fashion Tea Sunglass</h3>
             <button class="button" onclick="shade()">View Price</button>
         
-            <img src="images/Crystal Stone Earrings.jpg" alt="Earrings" height="350px" width="350px" style="border: groove;">
-            <h3 id="s">Crystal Stone Earring</h3>
+            <img src="Crystal Stone Earrings.jpg" alt="Earrings" class="clt">
+            <h3 id="s" class="text">Crystal Stone Earring</h3>
             <button class="button" onclick="stone()">View Price</button>
 
-            <img src="images/Crystal Stone Jewelry.jpg" alt="Jewelry" height="350px" width="350px" style="border: groove;">
-            <h3 id="u">Crystal Stone Jewelry</h3>
+            <img src="Crystal Stone Jewelry.jpg" alt="Jewelry" class="clt">
+            <h3 id="u" class="text">Crystal Stone Jewelry</h3>
             <button class="button" onclick="crystal()">View Price</button>
 
-            <img src="images/Floral Pattern Scrunchie Scarf.jpg" alt="Scarf" height="350px" width="350px" style="border: groove;">
-            <h3 id="v">Floral Pattern Scarf</h3>
+            <img src="Floral Pattern Scrunchie Scarf.jpg" alt="Scarf" class="clt">
+            <h3 id="v" class="text">Floral Pattern Scarf</h3>
             <button class="button" onclick="pattern()">View Price</button>
         
-            <img src="images/Freshwater Pearl Bracelet.jpg" alt="Bracelet" height="350px" width="350px" style="border: groove;">
-            <h3 id="w">Fresh Water Pearl Bracelet</h3>
+            <img src="Freshwater Pearl Bracelet.jpg" alt="Bracelet" class="clt">
+            <h3 id="w" class="text">Fresh Water Pearl Bracelet</h3>
             <button class="button" onclick="pearl()">View Price</button>  
         </div><br>
 
         <div>
-            <img src="images/Gold Cross Chain.jpg" alt="Chain" height="350px" width="350px" style="border: groove;">
-            <h3 id="x">Golden Cross Chain</h3>
+            <img src="Gold Cross Chain.jpg" alt="Chain" class="clt">
+            <h3 id="x" class="text">Golden Cross Chain</h3>
             <button class="button" onclick="cross()">View Price</button>
 
-            <img src="images/Lilac Purse.jpg" alt="Purse" height="350px" width="350px" style="border: groove;">
-            <h3 id="y">Lilac Purse</h3>
+            <img src="Lilac Purse.jpg" alt="Purse" class="clt">
+            <h3 id="y" class="text">Lilac Purse</h3>
             <button class="button" onclick="lilac()">View Price</button>
         
-            <img src="images/Rose Gold Earrings.jpg" alt="Earrings" height="350px" width="350px" style="border: groove;">
-            <h3 id="z">Rose Gold Earring</h3>
+            <img src="Rose Gold Earrings.jpg" alt="Earrings" class="clt">
+            <h3 id="z" class="text">Rose Gold Earring</h3>
             <button class="button" onclick="rose()">View Price</button>
 
-            <img src="images/Silver Leaf Charm Bracelet.jpg" alt="Bracelet" height="350px" width="350px" style="border: groove;">
-            <h3 id="aa">Silver Leaf Charm Bracelet</h3>
+            <img src="Silver Leaf Charm Bracelet.jpg" alt="Bracelet" class="clt">
+            <h3 id="aa" class="text">Silver Leaf Charm Bracelet</h3>
             <button class="button" onclick="charm()">View Price</button>
 
-            <img src="images/Silver Rhinestone Waist Belt.jpg" alt="Belt" height="350px" width="350px" style="border: groove;">
-            <h3 id="ab">Silver Rhinestone Waist Belt</h3>
+            <img src="Silver Rhinestone Waist Belt.jpg" alt="Belt" class="clt">
+            <h3 id="ab" class="text">Silver Rhinestone Waist Belt</h3>
             <button class="button" onclick="waist()">View Price</button>
         
-            <img src="images/Vintage Rhinestone Sunglasses.jpg" alt="Sunglasses" height="350px" width="350px" style="border: groove;">
-            <h3 id="ae">Vintage Rhinestone Sunglass</h3>
+            <img src="Vintage Rhinestone Sunglasses.jpg" alt="Sunglasses" class="clt">
+            <h3 id="ae" class="text">Vintage Rhinestone Sunglass</h3>
             <button class="button" onclick="glass()">View Price</button>
 
-            <img src="images/Bride Hat.jpg" alt="Hat" height="350px" width="350px" style="border: groove;">
-            <h3 id="af">Bridal Hat</h3>
+            <img src="Bride Hat.jpg" alt="Hat" class="clt">
+            <h3 id="af" class="text">Bridal Hat</h3>
             <button class="button" onclick="bride()">View Price</button>
 
-            <img src="images/Black Silk Facinator.jpg" alt="Fascinator" height="350px" width="350px" style="border: groove;">
-            <h3 id="ag">Black Silk Fascinator</h3>
+            <img src="Black Silk Facinator.jpg" alt="Fascinator" class="clt">
+            <h3 id="ag" class="text">Black Silk Fascinator</h3>
             <button class="button" onclick="silk()">View Price</button>
         </div><br>
         
@@ -163,54 +165,54 @@
 
         <div>
             <h3 style="text-align: center;">Method of Payment</h3>
-            <img src="Footer_image/mastercard_logo.jpg.png" alt="master_card" height="40px" style="margin-left: 50px;">
-            <img src="Footer_image/visa_card.jpg.png" alt="verve_card" height="40px">
-            <img src="Footer_image/verve_card.jpg.png" alt="verve_card" height="40px">
-            <img src="Footer_image/paystack.jpg" alt="paystack" height="40px" style="margin-right: 22px;">
+            <img src="mastercard_logo.jpg.png" alt="master_card" height="40px" style="margin-left: 50px;">
+            <img src="visa_card.jpg.png" alt="verve_card" height="40px">
+            <img src="verve_card.jpg.png" alt="verve_card" height="40px">
+            <img src="paystack.jpg" alt="paystack" height="40px" style="margin-right: 22px;">
         </div>
 
         <div>
-            <h3 style="margin-left: 40px;">Join Our Newsletter!</h3>
+            <h3 style="margin-left: 40px; color: orange;">Join Our Newsletter!</h3>
             <form action="">
                 <label for="email"></label>
-                <input type="text" id="email" name="email" value="Your email address" style="padding: 10px; margin-right: 10px; border: groove; border-color: rgb(130, 129, 129);"><button style="padding: 7px; margin-right: 10px; font-size: 12px;">SIGN UP</button>
+                <input type="text" id="email" name="email" value="Your email address" style="padding: 10px; margin-right: 10px; border: none; border-radius: 20px"><button style="padding: 10px; margin-right: 10px; font-size: 10px; border-radius: 50px; color: orange;">SIGN UP</button>
             </form>
         </div>
     </div>    
 
-    <div class="footer" style="border-bottom: groove; border-color: rgb(130, 129, 129);">
+    <div class="footer" style="border-bottom: groove; border-color: rgb(130, 129, 129); padding-bottom: 5px;">
         <div style="display: grid; grid-template-columns: auto auto auto auto auto auto;">
-            <img src="Footer_image/facebook_logo.png" alt="facebook_logo" style="width: 50px; height: 50px; margin-left: 5px;">
-            <a href="#" style="display: inline-block; margin-right: 50px; margin-bottom: 50px; text-decoration: none;">Royal Apparel</a>
+            <img src="facebook_logo.png" alt="facebook_logo" style="width: 50px; height: 50px; margin-left: 5px;">
+            <a href="#" style="display: inline-block; margin-right: 50px; margin-bottom: 50px; text-decoration: none; color: orange;">Royal Apparel</a>
 
-            <img src="Footer_image/twitter_logo.png" alt="twitter_logo" style="width: 50px; height: 50px;">
-            <a href="#" style="display: inline-block; margin-right: 50px; text-decoration: none; text-decoration: none;">@Royal Apparel</a>
+            <img src="twitter_logo.png" alt="twitter_logo" style="width: 50px; height: 50px;">
+            <a href="#" style="display: inline-block; margin-right: 50px; text-decoration: none; text-decoration: none; color: orange;">@Royal Apparel</a>
 
-            <img src="Footer_image/instagram_logo.png" alt="instagram_logo" style="width: 50px; height: 50px">
-            <a href="#" style="display: inline-block; margin-right: 50px; text-decoration: none;">Royal_Apparel</a>
+            <img src="instagram_logo.png" alt="instagram_logo" style="width: 50px; height: 50px">
+            <a href="#" style="display: inline-block; margin-right: 50px; text-decoration: none; color: orange;">Royal_Apparel</a>
 
-            <img src="Footer_image/google_maps_logo.png" alt="google_maps_logo" style="width: 50px; height: 50px;">
-            <a href="#" style="display: inline-block; margin-right: 50px; text-decoration: none;">Lagos, Nigeria</a>
+            <img src="google_maps_logo.png" alt="google_maps_logo" style="width: 50px; height: 50px;">
+            <a href="#" style="display: inline-block; margin-right: 50px; text-decoration: none; color: orange;">Lagos, Nigeria</a>
 
-            <img src="Footer_image/gmail_logo.png" alt="gmail_logo" style="width: 50px; height: 50px;">
-            <a href="#" style="display: inline-block; margin-right: 50px; text-decoration: none;">royalapparel@gmail.com</a>
+            <img src="gmail_logo.png" alt="gmail_logo" style="width: 50px; height: 50px;">
+            <a href="#" style="display: inline-block; margin-right: 50px; text-decoration: none; color: orange;">royalapparel@gmail.com</a>
 
-            <img src="Footer_image/phone_icon.jpg" alt="phone_icon_logo" style="width: 50px; height: 50px;">
-            <a href="#" style="display: inline-block; margin-right: 50px; text-decoration: none;">+234 9068406872</a>
+            <img src="phone.png" alt="phone_icon_logo" style="width: 50px; height: 50px;">
+            <a href="#" style="display: inline-block; margin-right: 50px; text-decoration: none; color: orange;">+234 9068406872</a>
         </div>
 
         <div>
-            <h3 style="text-align: center;">Useful links</h3>
-            <a href="#profile" style="margin-left: 5px;">Profile</a>
-            <a href="#register" style="margin-left: 5px;">Register</a>
-            <a href="#catelogue" style="margin-left: 5px;">Catelogue</a>
-            <a href="#cart" style="margin-left: 5px;">Cart</a>
+            <h3 style="text-align: center;">Method of Payment</h3>
+            <img src="mastercard_logo.jpg.png" alt="master_card" height="40px" style="margin-left: 50px; border-radius: 5px;">
+            <img src="visa_card.jpg.png" alt="verve_card" height="40px" style="border-radius: 5px;">
+            <img src="verve_card.jpg.png" alt="verve_card" height="40px" style="border-radius: 5px;">
+            <img src="paystack.jpg" alt="paystack" height="40px" style="margin-right: 22px; border-radius: 5px;">
         </div>
 
         <div>
-            <a class="active" href="fashion_app.html" style="margin-left: 20px; color: #00f;">HOME</a> <br>
-            <a class="action" href="about.html" style="margin-left: 20px; color: #00f;">ABOUT</a> <br>
-            <a class="action" href="contact us.html" style="margin-left: 20px; color: #00f;">CONTACT</a>
+            <a class="active" href="fashion_app.html" style="margin-left: 20px; color: orange;">HOME</a> <br>
+            <a class="action" href="about.html" style="margin-left: 20px; color: orange;">ABOUT</a> <br>
+            <a class="action" href="contact us.html" style="margin-left: 20px; color: orange;">CONTACT</a>
         </div>
     </div>
      
