@@ -4,7 +4,39 @@
 }
 
 .text{
+    color: #000;*{
+    padding: 0;
+    margin: 0;
+}
+
+.text{
     color: #000;
+    background-color: #fff;
+    padding-top: 1px;
+}
+
+.collections{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    background-color: #3e3c3c;
+    text-align: center;
+    background-position: cover;
+    padding-bottom: 25px;
+}
+
+.clt{
+    border: none;
+    border-radius: 15px;
+    margin-top: 10px;
+    height: 350px;
+    width: 350px;
+}
+
+.text{
+    color: #fff;
+    background: #3e3c3c;
+    font-size: 20px;
+}
     background-color: #fff;
     padding-top: 1px;
 }
