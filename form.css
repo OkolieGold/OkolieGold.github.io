@@ -1,0 +1,27 @@
+*{
+    padding: 0;
+    margin: 0;
+ }
+
+.form{
+    padding-top: 150px;
+    padding-left: 270px;
+    color: aliceblue;
+    background-color: purple;
+    background-size: cover;
+    padding-bottom: 200px;
+    font-size: 30px;
+}
+
+.placeholder{
+    min-width: 320px;
+    max-width: 720px;
+    padding: 10px;
+    position: relative;
+    border-radius: 25px;
+    border: none;
+}
+
+.text{
+    
+}
