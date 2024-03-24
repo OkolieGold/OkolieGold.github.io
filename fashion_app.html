@@ -7,7 +7,30 @@
     <link rel="stylesheet" type="text/css" href="fashion_app.css">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <style></style>
+    <style>
+        .boutique{
+            text-decoration: none;
+            padding: 5px;
+            border: groove;
+            border-radius: 10px;
+            background-color: inherit;
+            color: #000;
+            font-size: 20px;
+        }
+
+        /* .Showbtn {
+            text-decoration: none;
+        }
+
+        .hideLinks{
+            
+            display: none;
+        }
+
+        .showLinks {
+            display:block;
+        } */
+    </style>
 </head>
 <body>
     <div class="header">
@@ -38,22 +61,25 @@
                 <option value="BITCOIN">BITCOIN 💰</option>
             </select>
         </div>
-    </div>
+    </div><hr>
 
     <div class="navbuttons">
         <a class="active" href="fashion_app.html">HOME</a>
         <a class="action" href="about.html">ABOUT</a>
         <a class="action" href="contact us.html">CONTACT US</a>
-    </div>
+        <!-- <ul class="Action" id="shop-with-us">Shop With Us
+            <li class="Shopbtn"><a href="menu.html">Clothings</a></li>
+            <li class="Shopbtn"><a href="footwear.html">Footwears</a></li>
+            <li class="Shopbtn"><a href="accessories.html">Accessories</a></li>
+        </ul> -->
+    </div><hr>
 
     <div style="background-image: url('background.jpg'); height: 550px; background-size: cover;" class="hero-image">
         <div class="hero-text">
             <h1 style="margin-bottom: 20px; margin-top: 30px;">Royal Apparel</h1>
             <h3 style="margin-bottom: 120px;">Fashion Collection</h3>
 
-            <div>
-                <button class="button"><b><a href="menu.html" style="text-decoration: none; color: gold;">BOUTIQUE</a></b></button>
-            </div>
+            <a href="menu.html" class="boutique">Boutique</a>
         </div>
     </div>
 
@@ -144,8 +170,20 @@
     
     <marquee class="copyright">Royal Apparel Fashion Collection. All rights reserved &copy; 2023</marquee>
     
-    <script>window.alert("Promo!!! 😁😁😁 Buy 2 Leather Pant and Get 1 Palazo Free!!! 😁😁😁");</script>
+    <!-- <script>window.alert("Promo!!! 😁😁😁 Buy 2 Leather Pant and Get 1 Palazo Free!!! 😁😁😁");</script> -->
 
     <script src="fashion_app.js"></script>
+    <!-- <script>
+        shopBtn = document.querySelector('#shop');
+        shopBtn.addEventListener('click', function(){
+            shopBtn.innerText='buy clothes'
+        })
+    </script> -->
+    <script>
+        shopDisplayEl = document.getElementById('shop-with-us');
+        shopDisplayEl.addEventListener('click', function(){
+            shopbtn.style.display = 'block';
+        })
+           </script>
 </body>
 </html>
