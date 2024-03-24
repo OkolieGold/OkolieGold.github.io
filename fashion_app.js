@@ -381,3 +381,10 @@ function flat(){
         document.getElementById("ay").innerHTML = "Black Snicker";
     };
 };
+
+var letEl = document.querySelector("#username");
+var btnEl = document.querySelector(".btn");
+                
+btnEl.addEventListener('click', function(){
+    alert(letEl.value);
+});
