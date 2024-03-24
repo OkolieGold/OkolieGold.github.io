@@ -6,7 +6,24 @@
     <title>Contact Royal Apparel</title>
     <link rel="stylesheet" type="text/css" href="fashion_app.css">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <style></style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        option{
+           background-color: greenyellow;
+        }
+        textarea{
+            border-radius: 30px;
+            padding: 20px 10px;
+        }
+        .submit-btn {
+            display: inline;
+            padding: 4px 20px;
+            background-color: orange; 
+            border-radius: 5px; 
+            border: groove;  
+            margin-bottom: 50px;
+        }
+    </style>
 </head>
 <body>
     <div class="header">
@@ -37,54 +54,56 @@
                 <option value="BITCOIN">BITCOIN 💰</option>
             </select>
         </div>
-    </div>
+    </div><hr>
 
     <div class="navbuttons">
         <a class="action" href="fashion_app.html">HOME</a>
         <a class="action" href="about.html">ABOUT</a>
         <a class="action" style="color: red;" href="contact us.html">CONTACT US</a>
         <a class="action" href="menu.html">BOUTIQUE</a>
-    </div>
+    </div><hr>
 
     <div class="container" >
-            <h1 style="padding-top: 25px;">Contact Us</h1>
-            <h3><b><i>Leave us a message here and we will to reply you soon! 😤😤😤</i></b></h3>  
-    </div>
+        <h1 style="padding-top: 25px;">Contact Us</h1>
+        <h3><b><i>Leave us a message here and we will to reply you soon! 😤😤😤</i></b></h3>
 
-    <div class="column">
-        <form action="action_page.php">
-           <label for="fname" style="margin-right: 30px;">First Name</label>
-           <input class="placeholder" type="text" id="fname" name="First Name" placeholder="Your name" style="width: 300px; padding: 10px; padding-right: 200px;"><br>
+            <div class="column">
+                <form class="frm" action="action_page.php">
+                   <label for="fname" style="margin-right: 30px;">First Name</label>
+                   <input class="placeholder" type="text" id="fname" name="First Name" placeholder="Your name" style="min-width: 300px;"><br>
+        
+                   <label for="lname" style="margin-right: 32px;">Last Name</label>
+                   <input class="placeholder" type="text" id="lname" name="Last name" placeholder="Your name" style="min-width: 300px;"><br>
+        
+                   <label for="pnumber">Phone Number</label>
+                   <input class="placeholder" type="number" id="pnumber" name="Phone number" placeholder="+234" style="min-width: 300px;"><br>
+        
+                   <label for="email"style="margin-right: 3px;">Email Address</label>
+                   <input class="placeholder" type="email" id="email" name="Email Address" placeholder="example@gmail.com" style="min-width: 300px;"><br>
+        
+                   <label>Country</label>
+                   <select class="placeholder" name="Country" id="country" style="min-width: 170px; padding: 10px; background-color: greenyellow;">
+                     <option value="Nigeria">Nigeria</option>
+                     <option value="Ghana">Ghana</option>
+                     <option value="Togo">Togo</option>
+                     <option value="Niger">Niger</option>
+                     <option value="Kenya">Kenya</option>
+                     <option value="Mali">Mali</option>
+                     <option value="South Africa">South Africa</option>
+                     <option value="Uganda">Uganda</option>
+                     <option value="Benin Republic">Benin Republic</option>
+                   </select><br>
+        
+                   <!-- <label style="position: absolute; bottom: -20; left: 20; color: green;">Subject</label><br> -->
+                   <textarea id="subject" name="subject" placeholder=" Write something..."  cols="65" rows="15"></textarea>
+                   <br>
 
-           <label for="lname" style="margin-right: 32px;">Last Name</label>
-           <input class="placeholder" type="text" id="lname" name="Last name" placeholder="Your name" style="width: 300px; padding: 10px; padding-right: 200px;"><br>
+                   <input class="placeholder submit-btn" type="submit" value="Submit">
+                </form>
+            </div>    
+    </div><hr>
 
-           <label for="pnumber">Phone Number</label>
-           <input class="placeholder" type="number" id="pnumber" name="Phone number" placeholder="+234" style="width: 300px; padding: 10px; padding-right: 200px;"><br>
-
-           <label for="email"style="margin-right: 3px;" >Email Address</label>
-           <input class="placeholder" type="email" id="email" name="Email Address" placeholder="example@gmail.com" style="width: 300px; padding: 10px; padding-right: 200px;"><br>
-
-           <label for="Country" style="margin-right: 55px;">Country</label>
-           <select class="placeholder" name="Country" id="country" style="width: 170px; padding: 10px; background-color: greenyellow;">
-             <option value="Nigeria" style="background-color: greenyellow;">Nigeria</option>
-             <option value="Ghana" style="background-color: greenyellow;">Ghana</option>
-             <option value="Togo" style="background-color: greenyellow;">Togo</option>
-             <option value="Niger" style="background-color: greenyellow;">Niger</option>
-             <option value="Kenya" style="background-color: greenyellow;">Kenya</option>
-             <option value="Mali" style="background-color: greenyellow;">Mali</option>
-             <option value="South Africa" style="background-color: greenyellow;">South Africa</option>
-             <option value="Uganda" style="background-color: greenyellow;">Uganda</option>
-             <option value="Benin Republic" style="background-color: greenyellow;">Benin Republic</option>
-           </select><br>
-
-           <label for="subject" style="position: absolute; padding-right: 50px;">Subject</label>
-           <textarea id="subject" name="subject" placeholder="📌 Write something..." style="height: 160px; width: 650px; margin-top: 25px; margin-left: 195px;"></textarea>
-           <input class="placeholder" type="submit" value="Submit" style="background-color: orange; border-radius: 5px; border: groove; margin-left: 800px; margin-bottom: 50px;">
-        </form>
-    </div>
-
-    <div class="footer" style="border-top: groove; border-color: rgb(130, 129, 129);">
+    <div class="footer">
         <div>
             <h3 style="text-align: center;">About us</h3>
             <p style="margin-left: 5px;">Royal Apparel is an online retailer that provides one-stop shopping for women outfits. Established in 2023, we are the first and only niche store in Nigeria wholly targeted at providing an unmatched range of fashionable wears for women.</p>
@@ -107,7 +126,7 @@
         </div>
     </div>    
 
-    <div class="footer" style="border-bottom: groove; border-color: rgb(130, 129, 129); padding-bottom: 5px;">
+    <div class="footer">
         <div style="display: grid; grid-template-columns: auto auto auto auto auto auto;">
             <img src="facebook_logo.png" alt="facebook_logo" style="width: 50px; height: 50px; margin-left: 5px;">
             <a href="#" style="display: inline-block; margin-right: 50px; margin-bottom: 50px; text-decoration: none; color: orange;">Royal Apparel</a>
@@ -141,7 +160,7 @@
             <a class="action" href="about.html" style="margin-left: 20px; color: orange;">ABOUT</a> <br>
             <a class="action" href="contact us.html" style="margin-left: 20px; color: orange;">CONTACT</a>
         </div>
-    </div>    
+    </div><hr>    
 
     <marquee class="copyright">Royal Apparel Fashion Collection. All rights reserved &copy; 2023</marquee>
 
