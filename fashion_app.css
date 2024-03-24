@@ -9,7 +9,6 @@
     padding-top: 5px;
     padding-bottom: 5px;
     background-color: orange;
-    border-top: groove;
 }
 
 .btn{  
@@ -150,7 +149,7 @@
 }
 
 .container{
-    color: #fff;
+    color: #000;
     background-color: #3e3c3c;
     text-align: center;
     padding-bottom: 1px;
@@ -158,13 +157,13 @@
 }
 
 .column{
-    padding-top: 15px;
     line-height: 3;
     font-size: 20px;
-    background-color: #3e3c3c;
-    color: orange;
-    padding-left: 25px;
-    padding-left: 100px;
+    color: #fff;
+    border: dashed 3px;
+    border-radius: 15px;
+    margin: 25px 200px;
+    text-align: inherit;
 }
 
 .placeholder{
