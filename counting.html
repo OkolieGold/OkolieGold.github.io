@@ -1,0 +1,199 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counting App</title>
+    <link rel="stylesheet" type="text/css" href="counting.css">
+<style>
+    .my_calculator{
+        border: solid;
+        border-radius: 15px;
+        margin: 50px 350px;
+        padding: 50px 10px;
+    }
+
+    .calculator{
+        text-align: center;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: xx-large;
+    }
+
+    #tap{
+        margin-left: 50%;
+        text-align: center;
+    }
+
+    .number{
+        border: groove;
+        border-radius: 4px;
+        padding: 4px;
+        margin: 2px;
+        text-align: center;
+    }
+
+    .keys{
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+    }
+
+    .placeholder{
+        margin: 10px 28px;
+        padding: 15px 60px;
+        border-radius: 5px;
+    }
+</style>
+</head>
+<body>
+    <div class="my_calculator">
+        <h1 class="calculator">Calculator</h1>
+        <input class="placeholder" type="placeholder"><placeholder type="number"></placeholder>
+
+        <div class="keys">
+            <button class="number" id="0">0</button>
+
+            <button class="number" id="1">1</button>
+
+            <button class="number" id="2">2</button>
+ 
+            <button class="number" id="3">3</button>
+        </div>
+
+        <div class="keys">
+            <button class="number" id="4">4</button>
+ 
+            <button class="number" id="5">5</button>
+   
+            <button class="number" id="6">6</button>
+      
+            <button class="number" id="7">7</button>
+        </div>
+
+        <div class="keys">
+            <button class="number" id="8">8</button>
+           
+            <button class="number" id="9">9</button>
+            
+            <button class="number" id="10">10</button>
+
+            <button class="number" id="division">/</button>
+        </div>
+
+        <div class="keys">
+            <button class="number" id="plus">+</button>
+           
+            <button class="number" id="minus">-</button>
+            
+            <button class="number" id="times">*</button>
+
+            <button class="number" onclick="count()" id="tap">=</button>
+        </div>
+    </div>
+    <script src="counting.js"></script>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counting App</title>
+    <link rel="stylesheet" type="text/css" href="counting.css">
+<style>
+    .my_calculator{
+        border: 2px double black;
+        border-radius: 15px;
+        margin: 50px 350px;
+        padding: 50px 10px;
+    }
+
+    .calculator{
+        text-align: center;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: xx-large;
+    }
+
+    #tap{
+        /* margin-left: 50%; */
+        text-align: center;
+    }
+
+    .number{
+        border: 1px solid black ;
+        border-radius: 4px;
+        padding: 4px;
+        margin: 4px;
+        text-align: center;
+        box-shadow: 1px 2px 3px black;
+        font-weight: 700;
+        font-size: 20px;
+    }
+
+    .number:active{
+        opacity: 0.8;
+        transform: translateY(1px);
+        box-shadow: none;
+    }
+
+    .keys{
+        display: grid;
+        grid-template-columns: 75px 75px 75px 75px;
+        margin-left: 18px;
+    }
+
+    .placeholder{
+        margin: 10px 28px;
+        padding: 8px 60px;
+        border-radius: 5px;
+    }
+</style>
+</head>
+<body>
+    <div class="my_calculator">
+        <h1 class="calculator">Calculator</h1>
+        <input class="placeholder" type="placeholder"><placeholder type="number"></placeholder>
+
+        <div class="keys">
+            <button class="number" id="1">1</button>
+
+            <button class="number" id="2">2</button>
+
+            <button class="number" id="3">3</button>
+ 
+            <button class="number op" id="minus">-</button>
+        </div>
+
+        <div class="keys">
+            <button class="number" id="4">4</button>
+ 
+            <button class="number" id="5">5</button>
+   
+            <button class="number" id="6">6</button>
+      
+            <button class="number op" id="divide">/</button>
+        </div>
+
+        <div class="keys">
+            <button class="number" id="7">7</button>
+           
+            <button class="number" id="8">8</button>
+            
+            <button class="number" id="9">9</button>
+
+        </div>
+
+        <div class="keys">
+            <button class="number" id="0">0</button>
+            
+            <button class="number op" id="plus">+</button>
+            
+            <button class="number op" id="multiply">*</button>
+
+            <button class="number op" onclick="count()" id="tap">=</button>
+        </div>
+    </div>
+    <script src="counting.js"></script>
+</body>
+</html>
