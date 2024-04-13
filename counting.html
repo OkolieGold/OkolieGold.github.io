@@ -11,7 +11,7 @@
         border-radius: 15px;
         text-align: center;
         margin: 50px 350px;
-        padding: 40px 20px;
+        padding: 50px 10px;
         background-color: #000000ce;
         color: #fff;
     }
@@ -26,8 +26,8 @@
         border: groove;
         border-color: #7a787849;
         border-radius: 10px;
-        padding: 7px 10px;
-        margin: 8px;
+        padding: 5px;
+        margin: 5px;
         font-size: 30px;
     }
 
@@ -43,8 +43,8 @@
         border: groove;
         border-color: #7a787849;
         border-radius: 10px;
-        padding: 7px 10px;
-        margin: 8px;
+        padding: 5px;
+        margin: 5px;
         font-size: 30px;
     }
 
@@ -59,15 +59,16 @@
         color: #000;
         border: groove #12121268;
         border-radius: 8px;
-        padding: 16px 72px;
+        padding: 16px 65px;
     }
 
     .keys{
         display: grid;
-        grid-template-columns: 80.5px 80.5px 80.5px 80.5px;
-        text-align: center;
+        grid-template-columns: 75px 75px 75px 75px;
+        margin-left: 20px;
     }
 </style>
+    
 <body style="background-color: grey;">
     <div class="calculator">
         <h2><b class="my_cal">MY CALCULATOR</b></h2>
@@ -91,7 +92,7 @@
             <button class="number" id="6">6</button>
 
             <button class="symbol" id="divide">/</button>
-        <div>
+        </div>
 
         <div class="keys">
             <button class="number" id="7">7</button>
@@ -100,18 +101,28 @@
 
             <button class="number" id="9">9</button>
 
-            <button class="symbol" id="dot">.</button>
-        <div>
-        
+            <button class="symbol" id="minus">-</button>
+        </div>
+
         <div class="keys">
+            <button class="symbol" id="percent">%</button>
+
             <button class="number" id="0">0</button>
 
-            <button class="symbol" id="plus">+</button>
+            <button class="symbol" id="dot">.</button>
 
-            <button class="symbol" id="minus">-</button>
+            <button class="symbol" id="plus">+</button>
+        </div>
+
+        <div class="keys">
+            <button class="symbol" id="cancel">❎</button>
+
+            <button class="symbol" id="rm" style="font-size: 10px;">Rate Me!</button>
+
+            <button class="symbol" id="half">½</button>
 
             <button class="symbol" id="equal_to">=</button>
-        <div>
+        </div>
     </div>
 </body>
 </html>
