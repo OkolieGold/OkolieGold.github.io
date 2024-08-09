@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<style>
+    .calculator{
+        border: groove #fbf1f13c;
+        border-radius: 15px;
+        text-align: center;
+        margin: 30px auto;
+        padding: 20px 0;
+        background-color: #000000ce;
+        color: #fff;
+        width: 338px;
+    }
+
+    .my_cal{
+        font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    }
+
+    .number{
+        background-color: #fff;
+        color: #000;
+        border: groove;
+        border-color: #7a787849;
+        border-radius: 10px;
+        padding: 5px;
+        margin: 5px;
+        font-size: 30px;
+    }
+
+    .number:active{
+        opacity: 0.8;
+        transform: translateY(1px);
+        box-shadow: none;
+    }
+
+    .operation{
+        background-color: rgba(3, 3, 253, 0.518);
+        color: #fff;
+        border: groove;
+        border-color: #7a787849;
+        border-radius: 10px;
+        padding: 5px;
+        margin: 5px;
+        font-size: 30px;
+    }
+
+    .operation:active{
+        opacity: 0.8;
+        transform: translateY(1px);
+        box-shadow: none;
+    }
+
+    .calculator .output{
+        background-color: rgba(187, 216, 245, 0.579);
+        color: #000;
+        border: groove #12121268;
+        border-radius: 8px;
+        /* padding: 106px 5px; */
+        text-align: center;
+        font-weight: 500;max-height: 200px;
+        font-size: 23px;
+        /* font-size: 2rem;
+        background-color: inherit;
+        color: white; */
+        /* grid-column: 1 / -1; */
+        /* display: flex;
+        flex-direction: column; */
+        /* justify-content: space-around; */
+        /* align-items: flex-end; */
+        word-break: break-all;
+        margin: 10px 25px;
+    }
+
+    .output .prev-display{
+        /* font-size: 1.3rem;
+        font-weight: 400;
+        color: hsl(0, 0%, 65%) */ display: none;
+    }
+    .output .curr-display{
+        /* font-size: 1.3rem;
+        font-weight: 400;
+        color: hsl(0, 0%, 65%) */
+    }
+    .keys{
+        display: grid;
+        grid-template-columns: 75px 75px 75px 75px;
+        margin-left: 20px;  
+    }
+
+    #rm{
+        grid-column: 2/4;
+        grid-row: 5/6;
+        font-size: 20px;
+    }
+
+    .span-2{
+        background-color: rgba(3, 3, 253, 0.518);
+        color: #fff;
+        border: groove;
+        border-color: #7a787849;
+        border-radius: 10px;
+        padding: 10px;
+        margin: 5px;
+        font-size: 20px;
+    }
+
+    .span-2:active{
+        opacity: 0.8;
+        transform: translateY(1px);
+        box-shadow: none;
+    }
+
+    .delete{
+        background-color: rgba(3, 3, 253, 0.518);
+        color: #fff;
+        border: groove;
+        border-color: #7a787849;
+        border-radius: 10px;
+        padding: 10px;
+        margin: 5px;
+        font-size: 20px;
+    }
+
+    .delete:active{
+        opacity: 0.8;
+        transform: translateY(1px);
+        box-shadow: none;
+    }
+</style>
+    
+<body style="background-color: grey;">
+    <div class="calculator">
+        <h2><b class="my_cal">MY CALCULATOR</b></h2>
+        
+        <div class="output">
+            <div class="prev-display"></div>
+            <div class="curr-display"></div>
+        </div>
+
+        <div class="keys">
+            <button class="number">1</button>
+
+            <button class="number">2</button>
+
+            <button class="number">3</button>
+
+            <button class="operation">*</button>
+        
+            <button class="number">4</button>
+
+            <button class="number">5</button>
+
+            <button class="number">6</button>
+
+            <button class="operation">/</button>
+       
+            <button class="number">7</button>
+
+            <button class="number">8</button>
+
+            <button class="number">9</button>
+
+            <button class="operation">-</button>
+       
+            <button class="operation">%</button>
+
+            <button class="number">0</button>
+
+            <button class="operation">.</button>
+
+            <button class="operation">+</button>
+        
+            <button class="span-2 clear">AC</button>
+
+            <button class="span-2 equal" id="rm">=</button>
+
+            <button class="delete">DEL</button>
+        </div>
+    </div>
+
+    <script>
+        const currDisplay = document.querySelector(".curr-display");
+        const prevDisplay = document.querySelector(".prev-display");
+        const numbers = document.querySelectorAll(".number");
+        const operands = document.querySelectorAll(".operation");
+        const clearBtn = document.querySelector(".clear");
+        const delBtn = document.querySelector(".delete");
+        const equalBtn = document.querySelector(".equal");
+        let operative;
+
+        function appendNumber(number) {
+            if (number === "." && currDisplay.innerText.includes(".")) return; currDisplay.innerText += number;
+        }
+
+        function chooseOperation(operand) {
+            if (currDisplay.innerText === "") return;
+            compute(operand);
+            operation = operand;
+            currDisplay.innerText += operand;
+            prevDisplay.innerText = currDisplay.innerText;
+            currDisplay.innerText = "";
+        }
+
+        function clearDisplay() {
+            currDisplay.innerText = "";
+            prevDisplay.innerText = "";
+        }
+
+        function compute(operand) {
+            let result;
+            const previousValue = parseFloat(prevDisplay.innerText);
+            const currentValue = parseFloat(currDisplay.innerText);
+
+            if (isNaN(previousValue) || isNaN(currentValue)) return;
+
+            switch (operation) {
+                case "+":
+                    result = previousValue + currentValue;
+                    break;
+
+                case "-":
+                    result = previousValue - currentValue;
+                    break;
+                    
+                case "*":
+                    result = previousValue * currentValue;
+                    break;
+                    
+                case "/":
+                    result = previousValue / currentValue;
+                    break;
+                    
+                case ".":
+                    result = previousValue . currentValue;
+                    break;
+                    
+                case "%":
+                    result = previousValue % currentValue;
+                    break;
+
+                default:
+                    return;
+            }
+
+            currDisplay.innerText = result;
+        }
+
+        numbers.forEach((number) => {
+            number.addEventListener("click", () => {
+                appendNumber(number.innerText);
+            });
+        });
+
+        operands.forEach((operand) => {
+            operand.addEventListener("click", () => {
+                chooseOperation(operand.innerText);
+            });
+        });
+
+        clearBtn.addEventListener("click", () => {
+            clearDisplay();
+        });
+
+        equalBtn.addEventListener("click", () => {
+            compute();
+            prevDisplay.innerText = "";
+        });
+
+        delBtn.addEventListener("click", () => {
+            currDisplay.innerText = currDisplay.innerText.slice(0, -1);
+        });
+    </script>
+</body>
+</html>
